@@ -1,0 +1,19 @@
+@import "reset.scss";
+@import "tools.scss";
+body
+{
+	background-color: #d2d2d2
+}
+.button1{
+	@include button(lime);
+}
+.button2{
+	@include button(green);	
+}
+.button3{
+	@include button(red);
+}
+.button4{
+	@include button(orange);
+}
+

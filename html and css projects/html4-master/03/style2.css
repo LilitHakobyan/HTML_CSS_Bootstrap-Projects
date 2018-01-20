@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  outline: 0; }
+
+header {
+  height: 50px;
+  background: lime; }
+
+.left-to-rigth, .menu-element {
+  display: inline-block;
+  vertical-align: top; }
+
+.menu-element {
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center; }
+  @media only screen and (max-width: 480px) {
+    .menu-element {
+      width: 100%; } }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .menu-element {
+      width: 100%; } }
+
+.menu {
+  display: inline-block; }
+  @media only screen and (max-width: 480px) {
+    .menu {
+      display: none; } }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .menu {
+      display: none; } }
+
+.menu-link {
+  font-size: 16px;
+  background-color: yellow;
+  width: 200px;
+  height: 50px;
+  display: block;
+  text-decoration: none; }
+  @media only screen and (max-width: 480px) {
+    .menu-link {
+      font-size: 16px;
+      background-color: yellow;
+      width: 100%;
+      line-height: 50px;
+      display: block; } }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .menu-link {
+      font-size: 16px;
+      background-color: yellow;
+      width: 100%;
+      line-height: 50px;
+      display: block; } }
+  .menu-link:hover {
+    background-color: #cccc00; }
+
+.menu-button {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  background: linear-gradient(white, lightgray);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+  cursor: pointer; }
+  .menu-button::selection {
+    background: transparent; }
+  @media only screen and (max-width: 480px) {
+    .menu-button {
+      display: block; } }
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .menu-button {
+      display: block; } }
+
+.show {
+  display: block; }
+
+.nkar {
+  -webkit-filter: blur(3px) drop-shadow(5px 5px 20px black) grayscale(0.5); }
+
+/*# sourceMappingURL=style2.css.map */

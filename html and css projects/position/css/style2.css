@@ -1,0 +1,32 @@
+*{
+	margin:0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+}
+body{
+	background-color: #d2d2d2;
+}
+#wrapper{
+	width: 650px;
+	margin:50px auto;
+}
+#header{	
+	height:100px;
+	background-color: red;
+}
+#content{
+    height: 200px;
+	background-color: white;
+	padding: 20px 20px 20px 20px;
+}
+p{
+	font-size: 17px;
+}
+#wrapper #content img{
+	width: 100px;
+	height:100px;
+	position: absolute ;
+	top:20px;
+	left: 20px;
+}

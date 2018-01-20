@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+}
+
+
+.redbox, .orangebox{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+
+.redbox {
+	background-color: red;
+	top: 50px;
+	left: 50px;
+}
+
+.orangebox{
+	background-color: orange;
+	top: 50px;
+	left: 250px;
+	transition: 1s top;
+}
+
+.move{
+	top: 500px;
+}

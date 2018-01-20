@@ -1,0 +1,112 @@
+.stretchRight, nav ul li:hover > ul {
+  -webkit-animation-name: stretchRight;
+  animation-name: stretchRight;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%; }
+
+@-webkit-keyframes stretchRight {
+  0% {
+    -webkit-transform: scaleX(0.3);
+    transform: scaleX(0.3); }
+  40% {
+    -webkit-transform: scaleX(1.02);
+    transform: scaleX(1.02); }
+  60% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+    transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+    transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+@keyframes stretchRight {
+  0% {
+    -webkit-transform: scaleX(0.3);
+    transform: scaleX(0.3); }
+  40% {
+    -webkit-transform: scaleX(1.02);
+    transform: scaleX(1.02); }
+  60% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+    transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(0.98);
+    transform: scaleX(0.98); }
+  80% {
+    -webkit-transform: scaleX(1.01);
+    transform: scaleX(1.01); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 0; }
+
+nav {
+  position: fixed; }
+
+body {
+  background-color: #d2d2d2; }
+
+nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+nav ul li {
+  position: relative;
+  list-style: none;
+  padding: 15px;
+  background: linear-gradient(#859398, #283048);
+  width: 150px;
+  text-align: center;
+  transition: all 0.5s; }
+  nav ul li:hover {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    background: linear-gradient(#52c234, #061700);
+    border-left: 10px solid red; }
+    nav ul li:hover > ul {
+      display: block; }
+
+nav ul li a {
+  padding: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 2px #0000cc; }
+
+nav ul ul, nav ul ul ul, nav ul ul ul ul, nav ul ul ul ul ul {
+  display: none;
+  position: absolute;
+  border-left: 4px solid #d2d2d2;
+  left: 180px;
+  top: 0; }
+
+i {
+  position: absolute;
+  left: 20px; }

@@ -1,0 +1,50 @@
+.*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+}
+
+.circlebox{
+	width: 1000px;
+	height: 100px;
+	/*min-height: 100px;*/
+	border: 2px solid lime;
+}
+
+.circlebox__circle{
+	border-radius: 50%;
+	width: 100px;
+	min-height: 100px;
+	background-color: yellow;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 5px;
+}
+
+.circlebox__circle__red{
+	background-color: red;
+}
+
+.circlebox__circle__big{
+	width: 200px;
+	height: 200px;
+}
+
+.circlebox__circle__square{
+	border-radius: 0;
+}
+
+.circlebox__circle__lime{
+	background-color: lime;
+}
+
+.triangle {
+	display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid black;
+  border-left: 100px solid transparent;
+}

@@ -1,0 +1,36 @@
+*{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+body{
+	background-color: #d2d2d2
+}
+#wrapper .container{
+	display: table;
+
+
+}
+#wrapper .container .container-row{
+	display: table-row;
+
+}
+#wrapper .container .container-row .panel1{
+	display: table-cell;
+   font-size: 35px;
+   background-color: red;
+   padding: 30px;
+}
+#wrapper .container .container-row .panel2{
+ display: table-cell;
+  font-size: 35px;
+  background-color:lime;
+  padding: 30px;
+
+}
+ul li{
+	font-size: 35px;
+	list-style-type: circle;
+	margin-left: 40px;
+}

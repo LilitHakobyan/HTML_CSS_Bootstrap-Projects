@@ -1,0 +1,50 @@
+body{
+	background-color: #d2d2d2;
+}
+h1{
+color: black;
+}
+#Misha{
+	color:red;
+	background-color: lime;
+	font-family: vivaldy;
+	font-size: 35px;
+}
+#Lilith{
+color: aqua;
+}
+#Garik{
+color: blue;
+}
+.guyn{
+	color:green;
+}
+#main1{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	border-top: 1px solid blue;
+	border-right: 1px solid red;
+	border-bottom: 1px dashed black;
+	border-left: 1px solid ;
+
+	margin-top: 10px;
+	margin-right: 10px;
+	/*margin-bottom: 10px;*/
+	margin-left: 10px;
+	display: inline-block;
+
+}
+#main2{
+
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	/*border-radius: 5px 10px 15px 20px;*/
+	border-radius: 50px;
+	display: inline-block;
+
+}
+.changer{
+	color: blue;
+}

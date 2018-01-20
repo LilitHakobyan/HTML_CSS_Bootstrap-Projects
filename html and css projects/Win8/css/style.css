@@ -1,0 +1,65 @@
+*{
+	border: 0px;
+	margin:0px;
+	padding: 0px;
+	font-size: 0px;
+}
+body{
+	background-color: #d2d2d2;
+}
+
+#wrapper{
+	width: 2040px;
+	height: 500px;
+	background-color:red;
+	margin-top: 100px;
+	margin-left: 50px;
+	background-image: url("../Images/body.jpg");
+
+}
+
+.gruppa__plitok{
+width: 500px;
+height: 500px;
+background-color: none;
+display: inline-block;
+margin-left: 10px;
+
+}
+.plitka{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	display: inline-block;
+	margin: 5px;
+	vertical-align: top;
+}
+.plitka__max{
+  width: 210px;
+}
+.ie_image{
+	background-image: url("../Images/ei.png");
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover; /* 100% */
+
+}
+.ie_text
+{
+	color: lime;
+	font-size: 30px;
+	position: relative;
+	top: 75px;
+}
+
+.ic_images{
+	background-image: url("../Images/camera.jpg");
+	background-position: center;
+	background-size: cover;
+}
+.ic_text{
+color: white;
+font-size: 25px;
+position: relative;
+top: 78px;
+}

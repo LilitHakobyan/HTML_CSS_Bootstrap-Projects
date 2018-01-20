@@ -1,0 +1,40 @@
+body{
+	background-color: #d2d2d2 
+}
+#wrapper{
+	width: 400px;
+	height: 400px;
+	background-color: gray;
+	/*margin:0 auto 0 auto;*/
+	/*margin:0 auto;*/
+	margin:50px auto;
+}
+#header{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	position: relative;
+	margin: auto; 
+	right: 40px;
+	box-shadow: 40px 40px 10px #333;
+
+}
+#content{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	right: 30px; /* right and left both relative */
+	box-shadow: 20px 20px 10px #333;
+}
+#footer{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	top: 40px;
+	left: -50px;
+	box-shadow: 20px 20px 10px #333;
+}

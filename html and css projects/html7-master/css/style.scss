@@ -1,0 +1,62 @@
+@import "animation.scss";
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 0;
+}
+
+nav {
+	position: fixed;
+}
+body{
+	background-color: #d2d2d2;
+}
+
+nav ul{
+	display: flex;
+	flex-direction:column;
+}
+
+nav ul li{
+	position: relative;
+	list-style: none;
+	padding: 15px;
+	background: linear-gradient(#859398,#283048);
+	width: 150px;
+	text-align: center;
+	transition:all 0.5s;
+	&:hover{	
+		> ul{
+			@extend .stretchRight;
+			display: block;
+		}
+		transform:translateX(10px);
+		background:linear-gradient( #52c234,#061700);
+		border-left: 10px solid lighten(#990000, 20%);
+	}
+}
+
+nav ul li a{
+	padding: 25px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	text-shadow:0 0 2px darken(blue, 10%);
+}
+
+nav ul ul, nav ul ul ul,nav ul ul ul ul,nav ul ul ul ul ul{
+	display: none;
+	position: absolute;
+	border-left:4px solid #d2d2d2; 
+	left:180px;
+	top:0;
+}
+
+i{
+	position: absolute;
+	left: 20px;
+}
+

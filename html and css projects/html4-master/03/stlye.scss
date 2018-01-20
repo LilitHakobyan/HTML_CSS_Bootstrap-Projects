@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+	outline: 0;
+}
+
+@mixin adaptive($media){
+	@if $media == smart {
+		@media only screen and(max-width: 480px) { @content	}
+	}
+	@else if $media == tablet {
+		@media only screen and(min-width: 481px) and  (max-width: 1024px){ @content	}
+	}
+	@else if $media == pc {
+		@media only screen and(min-width: 1025pxpx) { @content	}
+	}
+}
+
+
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+
+	@include adaptive(smart){
+		width: 100%;
+		background-color: black;
+		&:active{
+			background-color: lime;
+		}
+	}
+
+	@include adaptive(tablet){
+		width: 100%;
+		background-color: green;
+		&:active{
+			background-color: lime;
+		}
+	}
+
+	@include adaptive(pc){
+		width: 100%;
+		background-color: yellow;
+		&:active{
+			background-color: black;
+		}
+	}
+}
+

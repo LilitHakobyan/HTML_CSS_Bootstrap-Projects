@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0;
+	outline: 0;
+}
+
+@mixin adaptive($media){
+	@if $media == smart {
+		@media only screen and(max-width: 480px) { @content	}
+	}
+	@else if $media == tablet {
+		@media only screen and(min-width: 481px) and  (max-width: 1024px){ @content	}
+	}
+	@else if $media == pc {
+		@media only screen and(min-width: 1025pxpx) { @content	}
+	}
+}
+
+header{
+	height: 50px;
+	background: lime;
+}
+
+.left-to-rigth{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.menu-element{
+	@extend .left-to-rigth;
+	width: 200px;
+	height: 50px;
+	
+	
+	margin-left: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+
+	@include adaptive(smart){
+		width: 100%;
+	}
+	@include adaptive(tablet){
+		width: 100%;
+	}
+	
+}
+
+.menu{
+	display: inline-block;
+	@include adaptive(smart){
+		display:none;
+	}
+	@include adaptive(tablet){
+		display:none;
+	}
+	
+
+}
+
+.menu-link{
+	font-size: 16px;
+	background-color: yellow;
+	width: 200px;
+	height: 50px;
+	display: block;
+
+	text-decoration: none;
+
+	@include adaptive(smart){
+	font-size: 16px;
+	background-color: yellow;
+	width: 100%;
+	line-height: 50px;
+	display: block;
+
+	}
+	@include adaptive(tablet){
+	font-size: 16px;
+	background-color: yellow;
+	width: 100%;
+	line-height: 50px;
+	display: block;
+
+	}
+
+	&:hover{
+		background-color: darken(yellow, 10%)
+	}
+}
+
+
+.menu-button{
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+	line-height: 50px;
+	text-align: center;
+	background: linear-gradient(white, lightgray);
+	position: absolute;
+	top:0px;
+	right: 0px;
+	display:none;
+	cursor: pointer;
+	
+	&::selection{
+		background: transparent;
+	}
+
+	@include adaptive (smart){
+		display: block;
+	}
+	@include adaptive (tablet){
+		display: block;
+	}
+}
+
+.show{
+	display: block;
+}
+
+
+.nkar{
+	-webkit-filter: blur(3px) drop-shadow(5px 5px 20px black) grayscale(0.5);
+}
