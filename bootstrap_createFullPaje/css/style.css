@@ -1,0 +1,26 @@
+.navbar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	margin-top: 10px;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px transparent;
+}
+
+.carousel .item {
+	height: 500px;
+
+}
+.carousel-inner > .item > img {
+	width: 1500px;
+	height: 500px;
+}
+.carousel-caption p {
+	margin-bottom: 20px;
+	font-size: 21px;
+}
+.top {
+	margin-top: 30px;
+}
