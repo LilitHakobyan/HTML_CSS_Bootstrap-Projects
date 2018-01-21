@@ -1,0 +1,136 @@
+body ,html {
+	height: 100%;
+}
+body
+{
+	background-color: #ccc;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	background: none;
+}
+#header{
+	background: url(../img/body.jpg) center no-repeat;
+	background-size: cover;
+	/*height: 100vh;*/
+	height: 100%;
+}
+.section-table
+{
+	display: table;
+	height: 100%;
+	width: 100%
+}
+.section-row{
+	display: table-row;
+}
+.section-cell{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.section-center{
+	max-width: 550px;
+	display: inline-block;
+}
+#header h1{
+	font-family: Montserrat, sans-serif;
+	font-size: 31px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+#header p{
+	color: #fff;
+	font-size: 20px;
+}
+.btn{
+	font-family: Montserrat, sans-serif;
+	color: #fff;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	margin: 0 10px;
+	border: none;
+	color: #fff;
+	transition: background .5s;
+}
+
+.btn-primary{
+	background: #7ea4e8;
+}
+.btn-primary:hover{
+	background: #6787c2;
+}
+.btn-default{
+	background: #6a7079;
+}
+.btn-default:hover{
+	background: #474c52;
+	color: #fff;
+}
+/*=====================speakers===================*/
+#speakers{
+	padding: 90px 0;
+	border-bottom: 2px solid #f0f0f1;
+}
+#speakers h2{
+	color: #828689;
+}
+
+.large{
+	color: #828689;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+
+.section-tabs{
+	border: 3px solid #ececec;
+	border-radius: 2px;
+}
+
+
+.section-tabs .nav-tabs li:not(.active){
+	background: #ececec;
+}
+
+.section-tabs .tab-content{
+	padding: 25px 20px;
+}
+
+.section-tabs .tab-content ul li{
+	line-height: 30px;
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+}
+@media only screen and (max-width : 600px) {
+	#header{
+		min-height: 300px;
+	}
+	.section-center{
+		max-width: 320px;
+	}
+	#header h1{
+		font-size: 20px;
+	}
+	#header p{
+		font-size: 16px;
+	}
+	.section-btn{
+		font-size: 15px;
+	}
+}
